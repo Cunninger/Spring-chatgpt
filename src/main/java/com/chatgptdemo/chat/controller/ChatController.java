@@ -19,7 +19,7 @@ public class ChatController {
     public void chat(@RequestBody String content) {
         System.out.println("hello!");
         OpenAiStreamClient client = OpenAiStreamClient.builder()
-                .apiKey(Arrays.asList("ghu_1TDvSaGl21hxO9ZStkrytlQ0X2bAVr0pQS5k"))
+                .apiKey(Arrays.asList(""))
                 .keyStrategy(new KeyRandomStrategy())
                 .apiHost("https://proxy.cocopilot.org/v1/chat/completions/")
                 .build();
